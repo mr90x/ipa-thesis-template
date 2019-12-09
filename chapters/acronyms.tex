@@ -1,0 +1,33 @@
+\DeclareAcroListStyle{longtabu}{table}{
+	table=longtabu,
+	table-spec=@{}>{\bfseries}lX@{},  % first column bold
+	before = \singlespacing\renewcommand\arraystretch{1.655}  % avoid new rows for long entries, optimized for 12pt fonts here
+}
+
+\acsetup{
+	list-heading=chapter*,
+	list-style=longtabu,
+	list-name={\acronymtitle},
+	extra-style=paren,
+	hyperref=true
+}
+
+% List of acronmys
+\DeclareAcronym{ipa}{
+  short = IPA,
+  long  = Institute for Manufacturing Engineering and Automation,
+  list = Institut f\"ur Produktionstechnik und Automatisierung\newline,
+  extra = English: Institute for Manufacturing Engineering and Automation\vspace*{6pt}
+}
+
+\DeclareAcronym{cnn}{
+  short = CNN,
+  long  = convolutional neural network,
+  list  = Convolutional Neural Network
+}
+
+\DeclareAcronym{cob4}{
+  short = COB 4,
+  long  = Care-O-bot 4,
+  extra = Service Robot
+}

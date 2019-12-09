@@ -1,0 +1,197 @@
+% -----------------------------------------------------------
+% Template of theses at IPA and University of Stuttgart
+% The template has been generated using Texmaker and MikTex.
+% Both programs are available on Windows and
+% Ubuntu (16.04 onwards).
+% -----------------------------------------------------------
+% Some commands need latex to be executed twice, namely:
+% - Bibliography
+% - Acronyms
+% Therefore, configure Texmaker as follows (Options->
+% Configure Texmaker->Quick Build):
+% PdfLaTex + Bib(la)tex + PdfLaTex (x2) + View Pdf
+% -----------------------------------------------------------
+% Zotero can be used to manage the bibliography and export it
+% afterwards to the BibLaTex format. Hereby, the bibliography
+% is stored to resources/bibliography.bib.
+% -----------------------------------------------------------
+% The template offers two customizable variables in main.tex
+% to set an author and a headline for the acronyms page.
+% The titlepage can be modified in titlepage.tex.
+% Furthermore, a sample page is included in introduction.tex
+% that presents some commands and conventions.
+
+
+
+
+\documentclass[12pt, a4paper, twoside]{report}
+
+% force List of Algorithms to have grouped entries as LoF/LoT as well
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@chapter}% <cmd>
+  {\chaptermark{#1}}% <search>
+  {\chaptermark{#1}%
+   \addtocontents{loa}{\protect\addvspace{10\p@}}}% replace
+  {}{}% <success><failure>
+\makeatother
+
+\usepackage{graphicx} % include images
+\usepackage{subcaption}  % allows subfigures
+\usepackage[export]{adjustbox}  % allows overwriting default placement of images (left)
+\usepackage[footskip=1.5cm]{geometry}  % change page margins for titlepage
+\usepackage{titlesec}  % change chapter layout, change title spacing (before/after)
+\usepackage{titleps}  % change page numering
+\usepackage{float}  % force positioning
+\usepackage{hyperref}  % clickable links for table of contents
+\usepackage[english]{babel}  % English hyphenation style
+% \usepackage[ngerman]{babel} % German version
+\usepackage{microtype}  % improves full justification
+\usepackage{fancyhdr}  % further customize page layout (decorative lines, etc)
+\usepackage{setspace}  % control line spacing
+\usepackage[nottoc]{tocbibind}  % list LoF and LoT in table of contents
+\usepackage{acro}  % package for listing acronyms
+\usepackage{tabu,longtable}  % redefine table format for acronyms
+\usepackage{amssymb}  % more symbols
+\usepackage{amsmath}  % better math formulas
+\usepackage{tabularx} % auto line break for tables
+\usepackage{booktabs} % nicer tables
+\usepackage{algorithm}  % algorithm environment for pseudo code
+\usepackage{algpseudocode}  % write pseudo code
+\usepackage[labelsep=period]{caption}  % period instead of colon as delimiter in figure/table, and multi page subfigures
+\usepackage[backend=bibtex, citestyle=ieee, style=numeric, maxbibnames=99]{biblatex}
+\usepackage[T1]{fontenc}  % support special characters of authors in bib
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}  % scalable fonts, needed with fontenc, changes font to latin modern
+\usepackage{relsize}  % for hack concerning underscore length
+\usepackage{appendix}  % appendix
+\bibliography{resources/bibliography.bib}
+
+
+% user definable settings
+\newcommand{\acronymtitle}{List of Acronyms}  % chapter header for acronyms page
+\newcommand{\authorname}{Max Sample}  % author of thesis
+% end settings
+
+
+% change default chapter layout
+\titleformat{\chapter}%
+  {\normalfont\bfseries\huge\setstretch{1.0}}{\thechapter.}{12pt}{}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
+% define header and footer
+\pagestyle{fancy}
+\fancyhf{} % clear all fields
+\fancyhead[LE,RO]{\slshape\nouppercase\leftmark}
+\fancyhead[CO,CE]{\slshape{\authorname}}
+\fancyfoot[LE,RO]{\slshape\thepage}
+\renewcommand{\headrulewidth}{0.4pt}  % fancy line in header
+\renewcommand{\footrulewidth}{0.4pt}  % fancy line in footer
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\space#1}{}}  % remove Chapter tag from header
+
+% overwrite chapter pages which fall back to plain style
+\fancypagestyle{plain}{%
+	\fancyhf{}
+	\fancyhead[LE,RO]{\slshape\nouppercase\leftmark}
+	\fancyhead[CO,CE]{\slshape{\authorname}}
+	\fancyfoot[LE,RO]{\slshape\thepage}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+
+% invert twoside layout
+\let\tmp\oddsidemargin
+\let\oddsidemargin\evensidemargin
+\let\evensidemargin\tmp
+\reversemarginpar
+
+% set line spacing to 1.5
+\setstretch{1.5}
+
+% remove default left indent for LoT, LoF and LoA
+% the second parameter is responsible for that and forced to 0pt
+% others are kept at default values
+\makeatletter
+\let\old@dottedtocline\@dottedtocline
+\renewcommand{\@dottedtocline}[5]{\old@dottedtocline{#1}{0pt}{#3}{#4}{#5}}
+\makeatother
+
+% reduce the hspace before and after equations
+\AtBeginDocument{
+\setlength{\abovedisplayskip}{4pt}
+\setlength{\abovedisplayshortskip}{2pt}
+\setlength{\belowdisplayskip}{6pt}
+\setlength{\belowdisplayshortskip}{4pt}
+}
+
+% add chapter number to algorithm counting
+% further, reset algorithm counter for each new chapter
+\makeatletter 
+\renewcommand\thealgorithm{\thechapter.\arabic{algorithm}} 
+\@addtoreset{algorithm}{chapter} 
+\makeatother
+
+\setlength{\parskip}{0pt} % avoid latex to put space between paragraphs
+
+\renewcommand{\_}{\textscale{.3}{\textunderscore}}  % hack for shorter underscores in lmodern font
+
+% acronyms have to be defined in the preamble
+\input{chapters/acronyms}
+
+\begin{document}
+
+	\include{chapters/titlepage}
+	\restoregeometry
+	\newpage\null\thispagestyle{empty}\newpage  % add blank page
+	\pagenumbering{roman}
+	\addtocounter{page}{2}  % count pages from title page on
+	
+	\include{chapters/declaration}
+	\newpage\null\thispagestyle{empty}\newpage  % add blank page
+
+	\include{chapters/abstract}
+	\newpage\null\thispagestyle{empty}\newpage  % add blank page
+	
+	\tableofcontents
+	\clearpage
+
+	\listoffigures
+	\listoftables
+	\listofalgorithms
+	\addcontentsline{toc}{chapter}{List of Algorithms}
+
+	\clearpage % end page so that "List of Algorithms" header does not carry over
+	\markboth{\acronymtitle}{}  % add Acronyms to page header
+	\acuseall  % acro is still buggy and does not show all acronyms sometimes
+	\printacronyms
+	\addcontentsline{toc}{chapter}{\acronymtitle}
+	\clearpage % end list of acronyms
+	\acresetall  % reset acronyms as some might be listed in the list of figures/tables so that long forms will be printed once again in text
+
+	% add blank page if the page after acronyms is even so that the introduction starts on an uneven page
+	\makeatletter\ifodd\c@page\else
+		\newpage\null\thispagestyle{empty}\newpage
+	\fi\makeatother
+	\pagenumbering{arabic}  % starts at 1, which is uneven (even when this should actually be an even page number) which can break the layout style
+	
+	\include{chapters/introduction}
+	
+	\include{chapters/stateoftheart}
+	
+	\include{chapters/fundamentals}
+
+	\include{chapters/conception}
+	
+	\include{chapters/implementation}
+	
+	\include{chapters/experiments}
+	
+	\include{chapters/conclusion}
+	
+	\begin{appendices}
+	\include{chapters/appendix}
+	\end{appendices}
+	
+	\printbibliography[heading=bibintoc]
+  
+\end{document}

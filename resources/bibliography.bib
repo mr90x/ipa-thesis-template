@@ -1,0 +1,771 @@
+
+@inproceedings{mahler_dex-net_2016,
+	title = {Dex-Net 1.0: A cloud-based network of 3D objects for robust grasp planning using a Multi-Armed Bandit model with correlated rewards},
+	abstract = {This paper presents the Dexterity Network (Dex-Net) 1.0, a dataset of 3D object models and a sampling-based planning algorithm to explore how Cloud Robotics can be used for robust grasp planning. The algorithm uses a Multi- Armed Bandit model with correlated rewards to leverage prior grasps and 3D object models in a growing dataset that currently includes over 10,000 unique 3D object models and 2.5 million parallel-jaw grasps. Each grasp includes an estimate of the probability of force closure under uncertainty in object and gripper pose and friction. Dex-Net 1.0 uses Multi-View Convolutional Neural Networks ({MV}-{CNNs}), a new deep learning method for 3D object classification, to provide a similarity metric between objects, and the Google Cloud Platform to simultaneously run up to 1,500 virtual cores, reducing experiment runtime by up to three orders of magnitude. Experiments suggest that correlated bandit techniques can use a cloud-based network of object models to significantly reduce the number of samples required for robust grasp planning. We report on system sensitivity to variations in similarity metrics and in uncertainty in pose and friction. Code and updated information is available at http://berkeleyautomation.github.io/dex-net/.},
+	pages = {1957--1964},
+	booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation},
+	author = {Mahler, J. and Pokorny, F. T. and Hou, B. and Roderick, M. and Laskey, M. and Aubry, M. and Kohlhoff, K. and Kröger, T. and Kuffner, J. and Goldberg, K.},
+	date = {2016-05},
+	langid = {english},
+	keywords = {3D object models, cloud computing, cloud robotics, cloud-based network, control engineering computing, convolution, correlated rewards, data analysis, dataset, deep learning method, Dex-Net 1.0, dexterity network 1.0, Force, force closure, Friction, image classification, learning systems, Measurement, multi-armed bandit model, multiview convolutional neural networks, {MV}-{CNN}, neural nets, object classification, parallel-jaw grasps, path planning, Planning, robot vision, robust grasp planning, Robustness, similarity metrics, Solid modeling, Three-dimensional displays},
+	file = {IEEE Xplore Abstract Record:F\:\\Arbeitstisch\\Zotero\\storage\\MNWEAF96\\7487342.html:text/html;IEEE Xplore Full Text PDF:F\:\\Arbeitstisch\\Zotero\\storage\\LXQJ6PCX\\Mahler et al. - 2016 - Dex-Net 1.0 A cloud-based network of 3D objects f.pdf:application/pdf}
+}
+
+@article{mahler_dex-net_2017,
+	title = {Dex-Net 2.0: Deep Learning to Plan Robust Grasps with Synthetic Point Clouds and Analytic Grasp Metrics},
+	abstract = {To reduce data collection time for deep learning of robust robotic grasp plans, we explore training from a synthetic dataset of 6.7 million point clouds, grasps, and analytic grasp metrics generated from thousands of 3D models from Dex-Net 1.0 in randomized poses on a table. We use the resulting dataset, {DexNet} 2.0, to train a Grasp Quality Convolutional Neural Network ({GQ}-{CNN}) model that rapidly predicts the probability of success of grasps from depth images, where grasps are speciﬁed as the planar position, angle, and depth of a gripper relative to an {RGB}-D sensor. Experiments with over 1,000 trials on an {ABB} {YuMi} comparing grasp planning methods on singulated objects suggest that a {GQ}-{CNN} trained with only synthetic data from Dex-Net 2.0 can be used to plan grasps in 0.8s with a success rate of 93\% on eight known objects with adversarial geometry and is 3× faster than registering point clouds to a precomputed dataset of objects and indexing grasps. The Dex-Net 2.0 grasp planner also has the highest success rate on a dataset of 10 novel rigid objects and achieves 99\% precision (one false positive out of 69 grasps classiﬁed as robust) on a dataset of 40 novel household objects, some of which are articulated or deformable. Code, datasets, videos, and supplementary material are available at http://berkeleyautomation.github.io/dex-net.},
+	journaltitle = {Robotics: Science and Systems},
+	author = {Mahler, Jeffrey and Liang, Jacky and Niyaz, Sherdil and Laskey, Michael and Doan, Richard and Liu, Xinyu and Ojea, Juan Aparicio and Goldberg, Ken},
+	date = {2017-03},
+	langid = {english},
+	keywords = {Computer Science - Robotics},
+	file = {Mahler et al. - 2017 - Dex-Net 2.0 Deep Learning to Plan Robust Grasps w.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\5AY2CGXW\\Mahler et al. - 2017 - Dex-Net 2.0 Deep Learning to Plan Robust Grasps w.pdf:application/pdf}
+}
+
+@article{feix_analysis_2014,
+	title = {Analysis of Human Grasping Behavior: Object Characteristics and Grasp Type},
+	abstract = {This paper is the first of a two-part series analyzing human grasping behavior during a wide range of unstructured tasks. The results help clarify overall characteristics of human hand to inform many domains, such as the design of robotic manipulators, targeting rehabilitation toward important hand functionality, and designing haptic devices for use by the hand. It investigates the properties of objects grasped by two housekeepers and two machinists during the course of almost 10,000 grasp instances and correlates the grasp types used to the properties of the object. We establish an object classification that assigns each object properties from a set of seven classes, including mass, shape and size of the grasp location, grasped dimension, rigidity, and roundness. The results showed that 55 percent of grasped objects had at least one dimension larger than 15 cm, suggesting that more than half of objects cannot physically be grasped using their largest axis. Ninety-two percent of objects had a mass of 500 g or less, implying that a high payload capacity may be unnecessary to accomplish a large subset of human grasping behavior. In terms of grasps, 96 percent of grasp locations were 7 cm or less in width, which can help to define requirements for hand rehabilitation and defines a reasonable grasp aperture size for a robotic hand. Subjects grasped the smallest overall major dimension of the object in 94 percent of the instances. This suggests that grasping the smallest axis of an object could be a reliable default behavior to implement in grasp planners.},
+	pages = {311--323},
+	journaltitle = {{IEEE} Transactions on Haptics},
+	author = {Feix, T. and Bullock, I. M. and Dollar, A. M.},
+	date = {2014-07},
+	keywords = {Force, object classification, activities of daily living, behavioural sciences, grasp aperture size, grasp types, Grasping, hand functionality, hand rehabilitation, Hand Strength, haptic device design, haptic interfaces, Human grasping, human grasping behavior analysis, human-robot interaction, Humans, Joints, manipulation, manipulators, medical robotics, object characteristics, patient rehabilitation, prosthetics, Psychomotor Performance, robotic hands, robotic manipulators, Robots, Shape, Size Perception, Thumb, User-Computer Interface, Weight Perception},
+	file = {IEEE Xplore Abstract Record:F\:\\Arbeitstisch\\Zotero\\storage\\T973SXNC\\6822601.html:text/html;IEEE Xplore Full Text PDF:F\:\\Arbeitstisch\\Zotero\\storage\\J9PHFI6J\\Feix et al. - 2014 - Analysis of Human Grasping Behavior Object Charac.pdf:application/pdf}
+}
+
+@article{bicchi_closure_1995,
+	title = {On the Closure Properties of Robotic Grasping},
+	volume = {14},
+	abstract = {The form closure and force closure properties of robotic grasping are investigated. Loosely speaking, these properties are related to the capability of the robot to inhibit motions of the workpiece in spite of externally applied forces. In this paper, form closure is considered as a purely geometric property of a set of unilateral  contact  constraints, such as those applied on a workpiece by a mechanical xture, while force closure is related with the capability of the particular robotic device being considered to apply forces through contacts. The concepts of partial form and force closure properties are introduced and discussed, and an algorithm is proposed to obtain a synthetic geometric description of partial form closure constraints. While the literature abounds with form closure tests, proposed algorithms for testing force closure are either approximate or computationally expensive. This paper proves the equivalence of force closure analysis with the study of the equilibria of an ordinary di erential equation, to which Lyapunov's direct method is applied. This observation leads to an e cient algorithm for assessing the force closure property of the grasp.},
+	pages = {319--334},
+	number = {4},
+	journaltitle = {The International Journal of Robotics Research},
+	author = {Bicchi, Antonio},
+	date = {1995-08},
+	langid = {english},
+	file = {Bicchi - 1995 - On the Closure Properties of Robotic Grasping.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\WYBVUAWG\\Bicchi - 1995 - On the Closure Properties of Robotic Grasping.pdf:application/pdf}
+}
+
+@inproceedings{bohg_mind_2011,
+	title = {Mind the gap - robotic grasping under incomplete observation},
+	abstract = {We consider the problem of grasp and manipulation planning when the state of the world is only partially observable. Specifically, we address the task of picking up unknown objects from a table top. The proposed approach to object shape prediction aims at closing the knowledge gaps in the robot's understanding of the world. A completed state estimate of the environment can then be provided to a simulator in which stable grasps and collision-free movements are planned. The proposed approach is based on the observation that many objects commonly in use in a service robotic scenario possess symmetries. We search for the optimal parameters of these symmetries given visibility constraints. Once found, the point cloud is completed and a surface mesh reconstructed. Quantitative experiments show that the predictions are valid approximations of the real object shape. By demonstrating the approach on two very different robotic platforms its generality is emphasized.},
+	pages = {686--693},
+	booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation},
+	author = {Bohg, J. and Johnson-Roberson, M. and León, B. and Felip, J. and Gratal, X. and Bergström, N. and Kragic, D. and Morales, A.},
+	date = {2011-05},
+	keywords = {Planning, Grasping, Robots, Shape, Approximation methods, collision-free movements, gap robotic grasping, Image reconstruction, incomplete observation, manipulation planning, mesh generation, mesh reconstruction, object shape prediction, robots, Surface reconstruction},
+	file = {IEEE Xplore Abstract Record:F\:\\Arbeitstisch\\Zotero\\storage\\S44YZI86\\5980354.html:text/html;IEEE Xplore Full Text PDF:F\:\\Arbeitstisch\\Zotero\\storage\\GJLPKLKN\\Bohg et al. - 2011 - Mind the gap - robotic grasping under incomplete o.pdf:application/pdf}
+}
+
+@article{diankov_openrave:_nodate,
+	title = {{OpenRAVE}: A Planning Architecture for Autonomous Robotics},
+	pages = {18},
+	author = {Diankov, Rosen and Kuffner, James},
+	langid = {english},
+	file = {Diankov and Kuffner - OpenRAVE A Planning Architecture for Autonomous R.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\Z3SHFVV3\\Diankov and Kuffner - OpenRAVE A Planning Architecture for Autonomous R.pdf:application/pdf}
+}
+
+@incollection{inaba_robust_2016,
+	title = {Robust Contact Generation for Robot Simulation with Unstructured Meshes},
+	abstract = {This paper presents a numerically stable method for rigid body simulation of unstructured meshes undergoing forceful contact, such as in robot locomotion and manipulation. The key contribution is a new contact generation method that treats the geometry as having a thin virtual boundary layer around the underlying meshes. Unlike existing methods, it produces contact estimates that are stable with respect to small displacements, which helps avoid jitter or divergence in the simulator caused by oscillatory discontinuities. Its advantages are particularly apparent on non-watertight meshes and can easily simulate interaction with partially-sensed and noisy objects, such as those that emerge from low-cost 3D scanners. The simulator is tested on a variety of robot locomotion and manipulation examples, and results closely match theoretical predictions and experimental data.},
+	pages = {357--373},
+	booktitle = {Robotics Research},
+	publisher = {Springer International Publishing},
+	author = {Hauser, Kris},
+	editor = {Inaba, Masayuki and Corke, Peter},
+	date = {2016-04},
+	langid = {english},
+	file = {Hauser - 2016 - Robust Contact Generation for Robot Simulation wit.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\23U56UHB\\Hauser - 2016 - Robust Contact Generation for Robot Simulation wit.pdf:application/pdf}
+}
+
+@online{noauthor_v-rep_nodate,
+	title = {V-{REP} User Manual},
+	url = {http://www.coppeliarobotics.com/helpFiles/},
+	urldate = {2019-06-22},
+	file = {V-REP User Manual:F\:\\Arbeitstisch\\Zotero\\storage\\LKH6DHBL\\helpFiles.html:text/html}
+}
+
+@inproceedings{todorov_mujoco:_2012,
+	title = {{MuJoCo}: A physics engine for model-based control},
+	abstract = {We describe a new physics engine tailored to model-based control. Multi-joint dynamics are represented in generalized coordinates and computed via recursive algorithms. Contact responses are computed via efﬁcient new algorithms we have developed, based on the modern velocity-stepping approach which avoids the difﬁculties with spring-dampers. Models are speciﬁed using either a high-level C++ {API} or an intuitive {XML} ﬁle format. A built-in compiler transforms the user model into an optimized data structure used for runtime computation. The engine can compute both forward and inverse dynamics. The latter are well-deﬁned even in the presence of contacts and equality constraints. The model can include tendon wrapping as well as actuator activation states (e.g. pneumatic cylinders or muscles). To facilitate optimal control applications and in particular sampling and ﬁnite differencing, the dynamics can be evaluated for different states and controls in parallel. Around 400,000 dynamics evaluations per second are possible on a 12-core machine, for a 3D homanoid with 18 dofs and 6 active contacts. We have already used the engine in a number of control applications. It will soon be made publicly available.},
+	pages = {5026--5033},
+	booktitle = {Proceedings of the {IEEE}/{RSJ} International Conference on Intelligent Robots and Systems},
+	author = {Todorov, Emanuel and Erez, Tom and Tassa, Yuval},
+	date = {2012-10},
+	langid = {english},
+	file = {Todorov et al. - 2012 - MuJoCo A physics engine for model-based control.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\TMHI5NN2\\Todorov et al. - 2012 - MuJoCo A physics engine for model-based control.pdf:application/pdf}
+}
+
+@inproceedings{erez_simulation_2015,
+	title = {Simulation tools for model-based robotics: Comparison of Bullet, Havok, {MuJoCo}, {ODE} and {PhysX}},
+	abstract = {There is growing need for software tools that can accurately simulate the complex dynamics of modern robots. While a number of candidates exist, the ﬁeld is fragmented. It is difﬁcult to select the best tool for a given project, or to predict how much effort will be needed and what the ultimate simulation performance will be. Here we introduce new quantitative measures of simulation performance, focusing on the numerical challenges that are typical for robotics as opposed to multi-body dynamics and gaming. We then present extensive simulation results, obtained within a new software framework for instantiating the same model in multiple engines and running side-by-side comparisons. Overall we ﬁnd that each engine performs best on the type of system it was designed and optimized for: {MuJoCo} wins the robotics-related tests, while the gaming engines win the gaming-related tests without a clear leader among them. The simulations are illustrated in the accompanying movie.},
+	pages = {4397--4404},
+	booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation},
+	author = {Erez, Tom and Tassa, Yuval and Todorov, Emanuel},
+	date = {2015-05},
+	langid = {english},
+	file = {Erez et al. - 2015 - Simulation tools for model-based robotics Compari.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\QPRZU87L\\Erez et al. - 2015 - Simulation tools for model-based robotics Compari.pdf:application/pdf}
+}
+
+@article{bohg_data-driven_2013,
+	title = {Data-Driven Grasp Synthesis - A Survey},
+	abstract = {We review the work on data-driven grasp synthesis and the methodologies for sampling and ranking candidate grasps. We divide the approaches into three groups based on whether they synthesize grasps for known, familiar or unknown objects. This structure allows us to identify common object representations and perceptual processes that facilitate the employed data-driven grasp synthesis technique. In the case of known objects, we concentrate on the approaches that are based on object recognition and pose estimation. In the case of familiar objects, the techniques use some form of a similarity matching to a set of previously encountered objects. Finally, for the approaches dealing with unknown objects, the core part is the extraction of speciﬁc features that are indicative of good grasps. Our survey provides an overview of the different methodologies and discusses open problems in the area of robot grasping. We also draw a parallel to the classical approaches that rely on analytic formulations.},
+	pages = {289--309},
+	journaltitle = {{IEEE} Transactions on Robotics},
+	author = {Bohg, Jeannette and Morales, Antonio and Asfour, Tamim and Kragic, Danica},
+	date = {2013-09},
+	langid = {english},
+	keywords = {Computer Science - Robotics},
+	file = {Bohg et al. - 2014 - Data-Driven Grasp Synthesis - A Survey.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\2EP3TX59\\Bohg et al. - 2014 - Data-Driven Grasp Synthesis - A Survey.pdf:application/pdf}
+}
+
+@thesis{miller_graspit!:_2001,
+	title = {{GraspIt}!: A Versatile Simulator for Robotic Grasping},
+	pagetotal = {140},
+	institution = {Columbia University},
+	type = {phdthesis},
+	author = {Miller, Andrew T.},
+	date = {2001},
+	langid = {english},
+	file = {Miller - GraspIt! A Versatile Simulator for Robotic Graspi.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\I34GPXAG\\Miller - GraspIt! A Versatile Simulator for Robotic Graspi.pdf:application/pdf}
+}
+
+@incollection{ando_opengrasp:_2010,
+	title = {{OpenGRASP}: A Toolkit for Robot Grasping Simulation},
+	abstract = {Simulation is essential for diﬀerent robotic research ﬁelds such as mobile robotics, motion planning and grasp planning. For grasping in particular, there are no software simulation packages, which provide a holistic environment that can deal with the variety of aspects associated with this problem. These aspects include development and testing of new algorithms, modeling of the environments and robots, including the modeling of actuators, sensors and contacts. In this paper, we present a new simulation toolkit for grasping and dexterous manipulation called {OpenGRASP} addressing those aspects in addition to extensibility, interoperability and public availability. {OpenGRASP} is based on a modular architecture, that supports the creation and addition of new functionality and the integration of existing and widely-used technologies and standards. In addition, a designated editor has been created for the generation and migration of such models. We demonstrate the current state of {OpenGRASP}’s development and its application in a grasp evaluation environment.},
+	pages = {109--120},
+	booktitle = {Simulation, Modeling, and Programming for Autonomous Robots},
+	publisher = {Springer Berlin Heidelberg},
+	author = {León, Beatriz and Ulbrich, Stefan and Diankov, Rosen and Puche, Gustavo and Przybylski, Markus and Morales, Antonio and Asfour, Tamim and Moisio, Sami and Bohg, Jeannette and Kuffner, James and Dillmann, Rüdiger},
+	editor = {Ando, Noriaki and Balakirsky, Stephen and Hemker, Thomas and Reggiani, Monica and von Stryk, Oskar},
+	date = {2010-11},
+	langid = {english},
+	file = {León et al. - 2010 - OpenGRASP A Toolkit for Robot Grasping Simulation.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\W48EM69K\\León et al. - 2010 - OpenGRASP A Toolkit for Robot Grasping Simulation.pdf:application/pdf}
+}
+
+@inproceedings{zapata-impata_using_2017,
+	title = {Using Geometry to Detect Grasping Points on 3D Unknown Point Cloud},
+	pages = {154--161},
+	booktitle = {Proceedings of the International Conference on Informatics in Control, Automation and Robotics},
+	author = {Zapata-Impata, Brayan S. and Mateo, Carlos M. and Gil, Pablo and Pomares, Jorge},
+	date = {2017-06},
+	langid = {english},
+	file = {Zapata-Impata et al. - 2017 - Using Geometry to Detect Grasping Points on 3D Unk.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\BQEXZDMR\\Zapata-Impata et al. - 2017 - Using Geometry to Detect Grasping Points on 3D Unk.pdf:application/pdf}
+}
+
+@article{richtsfeld_grasping_2008,
+	title = {Grasping of Unknown Objects from a Table Top},
+	abstract = {This paper describes the development of a novel vision-based grasping system for unknown objects based on range images. We realize a synthesis of the calculated grasp points with a 3D model of a hand prosthesis, which we are using as gripper. We locally ﬁnd grasp point candidates based on the shape of the object and validate the globally by checking collisions between the gripper and surrounding objects and the table top. Our approach integrates a robust object segmentation and grasp point detection for every object on a table in front of a 7-{DOF} robot arm. The algorithm analyzes the top surface of every object and outputs the generated grasp points and the required gripper pose to grasp the desired object. Additionally we can calculate the optimal opening angle of the gripper. The ﬁrst experimental results show that the presented automated grasping system is able to generate successful grasp points for a wide range of diﬀerent objects.},
+	pages = {12},
+	journaltitle = {Workshop on Vision in Action: Efficient strategies for cognitive agents in complex environments},
+	author = {Richtsfeld, Mario and Vincze, Markus},
+	date = {2008-10},
+	langid = {english},
+	file = {Richtsfeld and Vincze - Grasping of Unknown Objects from a Table Top.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\GVBCV8JB\\Richtsfeld and Vincze - Grasping of Unknown Objects from a Table Top.pdf:application/pdf}
+}
+
+@incollection{bicchi_using_2018,
+	title = {Using Geometry to Detect Grasp Poses in 3D Point Clouds},
+	abstract = {This paper proposes a new approach to using machine learning to detect grasp poses on novel objects presented in clutter. The input to our algorithm is a point cloud and the geometric parameters of the robot hand. The output is a set of hand poses that are expected to be good grasps. There are two main contributions. First, we identify a set of necessary conditions on the geometry of a grasp that can be used to generate a set of grasp hypotheses. This helps focus grasp detection away from regions where no grasp can exist. Second, we show how geometric grasp conditions can be used to generate labeled datasets for the purpose of training the machine learning algorithm. This enables us to generate large amounts of training data and it grounds our training labels in grasp mechanics. Overall, our method achieves an average grasp success rate of 88\% when grasping novels objects presented in isolation and an average success rate of 73\% when grasping novel objects presented in dense clutter. This system is available as a {ROS} package at http://wiki.ros.org/agile\_grasp.},
+	pages = {307--324},
+	booktitle = {Robotics Research},
+	publisher = {Springer International Publishing},
+	author = {ten Pas, Andreas and Platt, Robert},
+	editor = {Bicchi, Antonio and Burgard, Wolfram},
+	date = {2018},
+	langid = {english},
+	file = {ten Pas and Platt - 2018 - Using Geometry to Detect Grasp Poses in 3D Point C.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\CCAL59HD\\ten Pas and Platt - 2018 - Using Geometry to Detect Grasp Poses in 3D Point C.pdf:application/pdf}
+}
+
+@article{pas_grasp_2017,
+	title = {Grasp Pose Detection in Point Clouds},
+	abstract = {Recently, a number of grasp detection methods have been proposed that can be used to localize robotic grasp conﬁgurations directly from sensor data without estimating object pose. The underlying idea is to treat grasp perception analogously to object detection in computer vision. These methods take as input a noisy and partially occluded {RGBD} image or point cloud and produce as output pose estimates of viable grasps, without assuming a known {CAD} model of the object. Although these methods generalize grasp knowledge to new objects well, they have not yet been demonstrated to be reliable enough for wide use. Many grasp detection methods achieve grasp success rates (grasp successes as a fraction of the total number of grasp attempts) between 75\% and 95\% for novel objects presented in isolation or in light clutter. Not only are these success rates too low for practical grasping applications, but the light clutter scenarios that are evaluated often do not reﬂect the realities of real world grasping. This paper proposes a number of innovations that together result in a signiﬁcant improvement in grasp detection performance. The speciﬁc improvement in performance due to each of our contributions is quantitatively measured either in simulation or on robotic hardware. Ultimately, we report a series of robotic experiments that average a 93\% end-to-end grasp success rate for novel objects presented in dense clutter.},
+	pages = {17},
+	journaltitle = {The International Journal of Robotics Research},
+	author = {Pas, Andreas ten and Gualtieri, Marcus and Saenko, Kate and Platt, Robert},
+	date = {2017-06},
+	langid = {english},
+	keywords = {Computer Science - Robotics},
+	file = {Pas et al. - 2017 - Grasp Pose Detection in Point Clouds.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\B9H9S32J\\Pas et al. - 2017 - Grasp Pose Detection in Point Clouds.pdf:application/pdf}
+}
+
+@inproceedings{borst_grasping_2003,
+	title = {Grasping the dice by dicing the grasp},
+	abstract = {Many methods for generating and analyzing grasps have been developed in the recent years. They gave insight and comprehension of grasping with robot hands but many of them are rather complicated to implement and of high computational complexity.},
+	pages = {3692--3697},
+	booktitle = {Proceedings of the {IEEE}/{RSJ} International Conference on Intelligent Robots and Systems},
+	author = {Borst, C. and Fischer, M. and Hirzinger, G.},
+	date = {2003-10},
+	langid = {english},
+	file = {Borst et al. - 2003 - Grasping the dice by dicing the grasp.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\EW7U9GCP\\Borst et al. - 2003 - Grasping the dice by dicing the grasp.pdf:application/pdf}
+}
+
+@article{jaskowski_improved_2018,
+	title = {Improved {GQ}-{CNN}: Deep Learning Model for Planning Robust Grasps},
+	url = {https://arxiv.org/abs/1802.05992},
+	abstract = {Recent developments in the field of robot grasping have shown great improvements in the grasp success rates when dealing with unknown objects. In this work we improve on one of the most promising approaches, the Grasp Quality Convolutional Neural Network ({GQ}-{CNN}) trained on the {DexNet} 2.0 dataset. We propose a new architecture for the {GQ}-{CNN} and describe practical improvements that increase the model validation accuracy from 92.2\% to 95.8\% and from 85.9\% to 88.0\% on respectively image-wise and object-wise training and validation splits.},
+	pages = {6},
+	journaltitle = {{arXiv}:1802.05992 [cs, stat]},
+	author = {Jaśkowski, Maciej and Świątkowski, Jakub and Zając, Michał and Klimek, Maciej and Potiuk, Jarek and Rybicki, Piotr and Polatowski, Piotr and Walczyk, Przemysław and Nowicki, Kacper and Cygan, Marek},
+	date = {2018-02},
+	langid = {english},
+	keywords = {Computer Science - Robotics, Computer Science - Machine Learning, Computer Science - Artificial Intelligence, Statistics - Machine Learning},
+	file = {Jaśkowski et al. - 2018 - Improved GQ-CNN Deep Learning Model for Planning .pdf:F\:\\Arbeitstisch\\Zotero\\storage\\RAX3KCVW\\Jaśkowski et al. - 2018 - Improved GQ-CNN Deep Learning Model for Planning .pdf:application/pdf}
+}
+
+@article{caldera_review_2018,
+	title = {Review of Deep Learning Methods in Robotic Grasp Detection},
+	abstract = {For robots to attain more general-purpose utility, grasping is a necessary skill to master. Such general-purpose robots may use their perception abilities to visually identify grasps for a given object. A grasp describes how a robotic end-effector can be arranged to securely grab an object and successfully lift it without slippage. Traditionally, grasp detection requires expert human knowledge to analytically form the task-speciﬁc algorithm, but this is an arduous and time-consuming approach. During the last ﬁve years, deep learning methods have enabled signiﬁcant advancements in robotic vision, natural language processing, and automated driving applications. The successful results of these methods have driven robotics researchers to explore the use of deep learning methods in task-generalised robotic applications. This paper reviews the current state-of-the-art in regards to the application of deep learning methods to generalised robotic grasping and discusses how each element of the deep learning approach has improved the overall performance of robotic grasp detection. Several of the most promising approaches are evaluated and the most suitable for real-time grasp detection is identiﬁed as the one-shot detection method. The availability of suitable volumes of appropriate training data is identiﬁed as a major obstacle for effective utilisation of the deep learning approaches, and the use of transfer learning techniques is proposed as a potential mechanism to address this. Finally, current trends in the ﬁeld and future potential research directions are discussed.},
+	pages = {57},
+	journaltitle = {Multimodal Technologies and Interaction},
+	author = {Caldera, Shehan and Rassau, Alexander and Chai, Douglas},
+	date = {2018-09},
+	langid = {english},
+	file = {Caldera et al. - 2018 - Review of Deep Learning Methods in Robotic Grasp D.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\WMPQXMLI\\Caldera et al. - 2018 - Review of Deep Learning Methods in Robotic Grasp D.pdf:application/pdf}
+}
+
+@article{barrett_infants_2008,
+	title = {Infants’ visual anticipation of object structure in grasp planning},
+	abstract = {The coordination between visual and manual domains is a cornerstone of learning in early development. If infants anticipate an object’s physical characteristics prior to contact (i.e., from visual inspection), they could learn more about the physical world through visual observation only than if manual exploration is required. In this experiment, infants grasped a series of four round balls quite similar in size and overall shape, but different in structure. Two were composed of solid hard plastic (one transparent, one opaque) in a rigid structure, and two were composed of more ﬂexible plastic in a nonrigid structure. This nonrigid structure afforded grasping using a precision grasp with ﬁngertips extending inside the ball’s outer edge. In contrast, the rigid balls could be grasped only by a full-hand power grasp (due to the relative sizes of ball and infants’ hands). The infants’ manual anticipations were assessed in their ﬁrst reach for each ball, prior to their ﬁrst contact with the ball. In addition, grasping and other exploratory behaviors were assessed after contact with the ball. Results from this study suggest that infants from 5 to 15 months of age incorporate visible information about an object’s structure into their action on the object. This provides evidence that visuomotor connections are present as soon as infants start reaching for objects, allowing them to select the appropriate grasp for an object’s structure, even if they are not always capable of executing a pickup of the object using this grasp. Further research should investigate the discrepancies between infants’ grasp planning and their grasp execution.},
+	pages = {1--9},
+	journaltitle = {Infant Behavior and Development},
+	author = {Barrett, Tracy M. and Traupman, Emily and Needham, Amy},
+	date = {2008-01},
+	langid = {english},
+	file = {Barrett et al. - 2008 - Infants’ visual anticipation of object structure i.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\ATLMFIRY\\Barrett et al. - 2008 - Infants’ visual anticipation of object structure i.pdf:application/pdf}
+}
+
+@article{schum_ten-_2011,
+	title = {Ten- and twelve-month-olds’ visual anticipation of orientation and size during grasping},
+	abstract = {The anticipation of two object dimensions during grasping was investigated in 10- and 12-month-olds. We presented objects varying in both orientation and size and analyzed infants’ anticipatory hand conﬁgurations. We found in Experiment 1 that nearly all of the 12-month-olds (94\%), but less than half of the 10-month-olds (40\%), anticipated both dimensions before touching the object. Experiment 2 ruled out the possibility that this behavior resulted from the infants’ inability to anticipate the size of the stimuli. Thus, integrating two object dimensions during reaching seems to be difﬁcult for 10-month-olds. In addition, we found a sequential adjustment when two dimensions were considered: Infants ﬁrst adjusted the orientation and then the size. The implications of our ﬁndings concerning the planning and execution of grasping movements are discussed.},
+	pages = {218--231},
+	journaltitle = {Journal of Experimental Child Psychology},
+	author = {Schum, Nina and Jovanovic, Bianca and Schwarzer, Gudrun},
+	date = {2011-06},
+	langid = {english},
+	file = {Schum et al. - 2011 - Ten- and twelve-month-olds’ visual anticipation of.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\X8KYGGX5\\Schum et al. - 2011 - Ten- and twelve-month-olds’ visual anticipation of.pdf:application/pdf}
+}
+
+@article{jovanovic_learning_2011,
+	title = {Learning to grasp efficiently: The development of motor planning and the role of observational learning},
+	abstract = {We examined whether 18-, 24-, and 42-month-old children, like adults, prospectively adjust their hand movements to insure a comfortable hand posture at the endpoint, and whether children can learn to grasp efﬁciently by observation. The task required grasping a bar and ﬁtting it into a hollow cylinder in order to make it light up. Measures of quantitative (grip height), as well as qualitative (grip type) prospective grip adaptation were analyzed. Grip height adaptation was found reliably by 24 months, grip type adaptation by 3 years. The ability to learn efﬁcient grasping by observation seems however very restricted.},
+	pages = {945--954},
+	journaltitle = {Vision Research},
+	author = {Jovanovic, Bianca and Schwarzer, Gudrun},
+	date = {2011-04},
+	langid = {english},
+	file = {Jovanovic und Schwarzer - 2011 - Learning to grasp efficiently The development of .pdf:F\:\\Arbeitstisch\\Zotero\\storage\\NRDIN32V\\Jovanovic und Schwarzer - 2011 - Learning to grasp efficiently The development of .pdf:application/pdf}
+}
+
+@article{kasper_kit_2012,
+	title = {The {KIT} object models database: An object model database for object recognition, localization and manipulation in service robotics},
+	abstract = {For the execution of object recognition, localization and manipulation tasks, most algorithms use object models. Most models are derived from, or consist of two-dimensional (2D) images and/or three-dimensional (3D) geometric data. The system described in this article was constructed speciﬁcally for the generation of such model data. It allows 2D image and 3D geometric data of everyday objects be obtained semi-automatically. The calibration provided allows 2D data to be related to 3D data. Through the use of high-quality sensors, high-accuracy data is achieved. So far over 100 objects have been digitized using this system and the data has been successfully used in several international research projects. All of the models are freely available on the web via a front-end that allows preview and ﬁltering of the data.},
+	pages = {927--934},
+	journaltitle = {The International Journal of Robotics Research},
+	author = {Kasper, Alexander and Xue, Zhixing and Dillmann, Rüdiger},
+	date = {2012-07},
+	langid = {english},
+	file = {Kasper et al. - 2012 - The KIT object models database An object model da.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\Q3Z79UXI\\Kasper et al. - 2012 - The KIT object models database An object model da.pdf:application/pdf}
+}
+
+@article{ioffe_batch_2015,
+	title = {Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift},
+	url = {https://arxiv.org/abs/1502.03167},
+	abstract = {Training Deep Neural Networks is complicated by the fact that the distribution of each layer’s inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlinearities. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normalization a part of the model architecture and performing the normalization for each training mini-batch. Batch Normalization allows us to use much higher learning rates and be less careful about initialization. It also acts as a regularizer, in some cases eliminating the need for Dropout. Applied to a state-of-the-art image classiﬁcation model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a signiﬁcant margin. Using an ensemble of batchnormalized networks, we improve upon the best published result on {ImageNet} classiﬁcation: reaching 4.9\% top-5 validation error (and 4.8\% test error), exceeding the accuracy of human raters.},
+	journaltitle = {{arXiv}:1502.03167 [cs]},
+	author = {Ioffe, Sergey and Szegedy, Christian},
+	date = {2015-02},
+	langid = {english},
+	keywords = {Computer Science - Machine Learning},
+	file = {Ioffe and Szegedy - 2015 - Batch Normalization Accelerating Deep Network Tra.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\CQ9WJPPL\\Ioffe and Szegedy - 2015 - Batch Normalization Accelerating Deep Network Tra.pdf:application/pdf}
+}
+
+@article{simonyan_very_2014,
+	title = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
+	url = {https://arxiv.org/abs/1409.1556},
+	abstract = {In this work we investigate the effect of the convolutional network depth on its accuracy in the large-scale image recognition setting. Our main contribution is a thorough evaluation of networks of increasing depth using an architecture with very small (3 × 3) convolution ﬁlters, which shows that a signiﬁcant improvement on the prior-art conﬁgurations can be achieved by pushing the depth to 16–19 weight layers. These ﬁndings were the basis of our {ImageNet} Challenge 2014 submission, where our team secured the ﬁrst and the second places in the localisation and classiﬁcation tracks respectively. We also show that our representations generalise well to other datasets, where they achieve state-of-the-art results. We have made our two best-performing {ConvNet} models publicly available to facilitate further research on the use of deep visual representations in computer vision.},
+	journaltitle = {{arXiv}:1409.1556 [cs]},
+	author = {Simonyan, Karen and Zisserman, Andrew},
+	date = {2014-09},
+	langid = {english},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	file = {Simonyan and Zisserman - 2014 - Very Deep Convolutional Networks for Large-Scale I.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\PPAP4T3L\\Simonyan and Zisserman - 2014 - Very Deep Convolutional Networks for Large-Scale I.pdf:application/pdf}
+}
+
+@article{wilson_marginal_2017,
+	title = {The Marginal Value of Adaptive Gradient Methods in Machine Learning},
+	url = {https://arxiv.org/abs/1705.08292},
+	abstract = {Adaptive optimization methods, which perform local optimization with a metric constructed from the history of iterates, are becoming increasingly popular for training deep neural networks. Examples include {AdaGrad}, {RMSProp}, and Adam. We show that for simple overparameterized problems, adaptive methods often ﬁnd drastically different solutions than gradient descent ({GD}) or stochastic gradient descent ({SGD}). We construct an illustrative binary classiﬁcation problem where the data is linearly separable, {GD} and {SGD} achieve zero test error, and {AdaGrad}, Adam, and {RMSProp} attain test errors arbitrarily close to half. We additionally study the empirical generalization capability of adaptive methods on several stateof-the-art deep learning models. We observe that the solutions found by adaptive methods generalize worse (often signiﬁcantly worse) than {SGD}, even when these solutions have better training performance. These results suggest that practitioners should reconsider the use of adaptive methods to train neural networks.},
+	journaltitle = {{arXiv}:1705.08292 [cs, stat]},
+	author = {Wilson, Ashia C. and Roelofs, Rebecca and Stern, Mitchell and Srebro, Nathan and Recht, Benjamin},
+	date = {2017-05},
+	langid = {english},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Wilson et al. - 2017 - The Marginal Value of Adaptive Gradient Methods in.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\5HB4WJW5\\Wilson et al. - 2017 - The Marginal Value of Adaptive Gradient Methods in.pdf:application/pdf}
+}
+
+@article{lin_focal_2017,
+	title = {Focal Loss for Dense Object Detection},
+	abstract = {The highest accuracy object detectors to date are based on a two-stage approach popularized by R-{CNN}, where a classiﬁer is applied to a sparse set of candidate object locations. In contrast, one-stage detectors that are applied over a regular, dense sampling of possible object locations have the potential to be faster and simpler, but have trailed the accuracy of two-stage detectors thus far. In this paper, we investigate why this is the case. We discover that the extreme foreground-background class imbalance encountered during training of dense detectors is the central cause. We propose to address this class imbalance by reshaping the standard cross entropy loss such that it down-weights the loss assigned to well-classiﬁed examples. Our novel Focal Loss focuses training on a sparse set of hard examples and prevents the vast number of easy negatives from overwhelming the detector during training. To evaluate the effectiveness of our loss, we design and train a simple dense detector we call {RetinaNet}. Our results show that when trained with the focal loss, {RetinaNet} is able to match the speed of previous one-stage detectors while surpassing the accuracy of all existing state-of-the-art two-stage detectors. Code is at: https://github.com/facebookresearch/Detectron.},
+	journaltitle = {{IEEE} Transactions on Pattern Analysis and Machine Intelligence},
+	author = {Lin, Tsung-Yi and Goyal, Priya and Girshick, Ross and He, Kaiming and Dollár, Piotr},
+	date = {2017-08},
+	langid = {english},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	file = {Lin et al. - 2017 - Focal Loss for Dense Object Detection.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\IQYSJDSH\\Lin et al. - 2017 - Focal Loss for Dense Object Detection.pdf:application/pdf}
+}
+
+@article{keskar_improving_2017,
+	title = {Improving Generalization Performance by Switching from Adam to {SGD}},
+	url = {https://arxiv.org/abs/1712.07628},
+	abstract = {Despite superior training outcomes, adaptive optimization methods such as Adam, Adagrad or {RMSprop} have been found to generalize poorly compared to Stochastic gradient descent ({SGD}). These methods tend to perform well in the initial portion of training but are outperformed by {SGD} at later stages of training. We investigate a hybrid strategy that begins training with an adaptive method and switches to {SGD} when appropriate. Concretely, we propose {SWATS}, a simple strategy which Switches from Adam to {SGD} when a triggering condition is satisﬁed. The condition we propose relates to the projection of Adam steps on the gradient subspace. By design, the monitoring process for this condition adds very little overhead and does not increase the number of hyperparameters in the optimizer. We report experiments on several standard benchmarks such as: {ResNet}, {SENet}, {DenseNet} and {PyramidNet} for the {CIFAR}-10 and {CIFAR}-100 data sets, {ResNet} on the tiny-{ImageNet} data set and language modeling with recurrent networks on the {PTB} and {WT}2 data sets. The results show that our strategy is capable of closing the generalization gap between {SGD} and Adam on a majority of the tasks.},
+	journaltitle = {{arXiv}:1712.07628 [cs, math]},
+	author = {Keskar, Nitish Shirish and Socher, Richard},
+	date = {2017-12},
+	langid = {english},
+	keywords = {Computer Science - Machine Learning, Mathematics - Optimization and Control},
+	file = {Keskar und Socher - 2017 - Improving Generalization Performance by Switching .pdf:F\:\\Arbeitstisch\\Zotero\\storage\\JK2BC92Q\\Keskar und Socher - 2017 - Improving Generalization Performance by Switching .pdf:application/pdf}
+}
+
+@article{balasubramanian_physical_2012,
+	title = {Physical Human Interactive Guidance: Identifying Grasping Principles From Human-Planned Grasps},
+	abstract = {We present a novel and simple experimental method called physical human interactive guidance to study human-planned grasping. Instead of studying how the human uses his/her own biological hand or how a human teleoperates a robot hand in a grasping task, the method involves a human interacting physically with a robot arm and hand, carefully moving and guiding the robot into the grasping pose, while the robot's configuration is recorded. Analysis of the grasps from this simple method has produced two interesting results. First, the grasps produced by this method perform better than grasps generated through a state-of-the-art automated grasp planner. Second, this method when combined with a detailed statistical analysis using a variety of grasp measures (physics-based heuristics considered critical for a good grasp) offered insights into how the human grasping method is similar or different from automated grasping synthesis techniques. Specifically, data from the physical human interactive guidance method showed that the human-planned grasping method provides grasps that are similar to grasps from a state-of-the-art automated grasp planner, but differed in one key aspect. The robot wrists were aligned with the object's principal axes in the human-planned grasps (termed low skewness in this paper), while the automated grasps used arbitrary wrist orientation. Preliminary tests show that grasps with low skewness were significantly more robust than grasps with high skewness (77-93\%). We conclude with a detailed discussion of how the physical human interactive guidance method relates to existing methods to extract the human principles for physical interaction.},
+	pages = {899--910},
+	journaltitle = {{IEEE} Transactions on Robotics},
+	author = {Balasubramanian, R. and Xu, L. and Brook, P. D. and Smith, J. R. and Matsuoka, Y.},
+	date = {2012-08},
+	keywords = {Grasping, haptic interfaces, Humans, Joints, manipulators, robot hand, Robot sensing systems, arbitrary wrist orientation, automated grasp planner, automated grasping synthesis, biological hand, experimental method, grasping principle, human robot interaction, human-planned grasping method, low skewness, physical human interactive guidance method, physical interaction, physics, physics-based heuristics, robot wrist, statistical analysis, teleoperation, telerobotics, Testing, Wrist},
+	file = {IEEE Xplore Abstract Record:F\:\\Arbeitstisch\\Zotero\\storage\\5QDQASPA\\6175147.html:text/html;IEEE Xplore Full Text PDF:F\:\\Arbeitstisch\\Zotero\\storage\\WYTNE7R9\\Balasubramanian et al. - 2012 - Physical Human Interactive Guidance Identifying G.pdf:application/pdf}
+}
+
+@inproceedings{goldfeder_grasp_2007,
+	title = {Grasp Planning via Decomposition Trees},
+	abstract = {Planning realizable and stable grasps on 3D objects is crucial for many robotics applications, but grasp planners often ignore the relative sizes of the robotic hand and the object being grasped or do not account for physical joint and positioning limitations. We present a grasp planner that can consider the full range of parameters of a real hand and an arbitrary object, including physical and material properties as well as environmental obstacles and forces, and produce an output grasp that can be immediately executed. We do this by decomposing a 3D model into a superquadric 'decomposition tree' which we use to prune the intractably large space of possible grasps into a subspace that is likely to contain many good grasps. This subspace can be sampled and evaluated in {GraspIt}!, our 3D grasping simulator, to find a set of highly stable grasps, all of which are physically realizable. We show grasp results on various models using a Barrett hand.},
+	pages = {4679--4684},
+	booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation},
+	author = {Goldfeder, C. and Allen, P. K. and Lackner, C. and Pelossof, R.},
+	date = {2007-04},
+	langid = {english},
+	keywords = {control engineering computing, Grasping, Humans, Robots, 3D grasping simulator, Analytical models, Barrett hand, Computational geometry, Failure analysis, grasp planning, {GraspIt}!, grippers, Hardware, Kinematics, Material properties, robotic hand, Robotics and automation, superquadric decomposition tree},
+	file = {IEEE Xplore Abstract Record:F\:\\Arbeitstisch\\Zotero\\storage\\JVMCT7WX\\4209818.html:text/html;IEEE Xplore Full Text PDF:F\:\\Arbeitstisch\\Zotero\\storage\\A2TTIE22\\Goldfeder et al. - 2007 - Grasp Planning via Decomposition Trees.pdf:application/pdf}
+}
+
+@inproceedings{singh_bigbird:_2014,
+	title = {{BigBIRD}: A large-scale 3D database of object instances},
+	abstract = {The state of the art in computer vision has rapidly advanced over the past decade largely aided by shared image datasets. However, most of these datasets tend to consist of assorted collections of images from the web that do not include 3D information or pose information. Furthermore, they target the problem of object category recognition—whereas solving the problem of object instance recognition might be sufﬁcient for many robotic tasks. To address these issues, we present a highquality, large-scale dataset of 3D object instances, with accurate calibration information for every image. We anticipate that “solving” this dataset will effectively remove many perceptionrelated problems for mobile, sensing-based robots.},
+	pages = {509--516},
+	booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation},
+	author = {Singh, Arjun and Sha, James and Narayan, Karthik S. and Achim, Tudor and Abbeel, Pieter},
+	date = {2014-05},
+	langid = {english},
+	file = {Singh et al. - 2014 - BigBIRD A large-scale 3D database of object insta.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\I9YMM7P7\\Singh et al. - 2014 - BigBIRD A large-scale 3D database of object insta.pdf:application/pdf}
+}
+
+@inproceedings{yun_jiang_efficient_2011,
+	title = {Efficient grasping from {RGBD} images: Learning using a new rectangle representation},
+	abstract = {Given an image and an aligned depth map of an object, our goal is to estimate the full 7-dimensional gripper conﬁguration—its 3D location, 3D orientation and the gripper opening width. Recently, learning algorithms have been successfully applied to grasp novel objects—ones not seen by the robot before. While these approaches use low-dimensional representations such as a ‘grasping point’ or a ‘pair of points’ that are perhaps easier to learn, they only partly represent the gripper conﬁguration and hence are sub-optimal.},
+	pages = {3304--3311},
+	booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation},
+	author = {{Yun Jiang} and Moseson, Stephen and Saxena, Ashutosh},
+	date = {2011-05},
+	langid = {english},
+	file = {Yun Jiang et al. - 2011 - Efficient grasping from RGBD images Learning usin.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\LRZYWDI5\\Yun Jiang et al. - 2011 - Efficient grasping from RGBD images Learning usin.pdf:application/pdf}
+}
+
+@online{perr0_tikz_2013,
+	title = {tikz pgf - More elegant way to achieve this same camera perspective projection model?},
+	url = {https://tex.stackexchange.com/questions/96074/more-elegant-way-to-achieve-this-same-camera-perspective-projection-model},
+	titleaddon = {{TeX} - {LaTeX} Stack Exchange},
+	author = {perr0},
+	urldate = {2019-10-10},
+	date = {2013},
+	file = {Snapshot:F\:\\Arbeitstisch\\Zotero\\storage\\6T34VD6W\\more-elegant-way-to-achieve-this-same-camera-perspective-projection-model.html:text/html}
+}
+
+@inproceedings{laskey_multi-armed_2015,
+	title = {Multi-armed bandit models for 2D grasp planning with uncertainty},
+	abstract = {For applications such as warehouse order fulfillment, robot grasps must be robust to uncertainty arising from sensing, mechanics, and control. One way to achieve robustness is to evaluate the performance of candidate grasps by sampling perturbations in shape, pose, and gripper approach and to compute the probability of force closure for each candidate to identify a grasp with the highest expected quality. Since evaluating the quality of each grasp is computationally demanding, prior work has turned to cloud computing. To improve computational efficiency and to extend this work, we consider how Multi-Armed Bandit ({MAB}) models for optimizing decisions can be applied in this context. We formulate robust grasp planning as a {MAB} problem and evaluate convergence times towards an optimal grasp candidate using 100 object shapes from the Brown Vision 2D Lab Dataset with 1000 grasp candidates per object. We consider the case where shape uncertainty is represented as a Gaussian process implicit surface ({GPIS}) with Gaussian uncertainty in pose, gripper approach angle, and coefficient of friction. We find that Thompson Sampling and the Gittins index {MAB} methods converged to within 3\% of the optimal grasp up to 10x faster than uniform allocation and 5x faster than iterative pruning.},
+	pages = {572--579},
+	booktitle = {Proceedings of the {IEEE} International Conference on Automation Science and Engineering},
+	author = {Laskey, M. and Mahler, J. and {McCarthy}, Z. and Pokorny, F. T. and Patil, S. and Berg, J. van den and Kragic, D. and Abbeel, P. and Goldberg, K.},
+	date = {2015-08},
+	keywords = {cloud computing, Force, Friction, Shape, Grippers, Robot sensing systems, grippers, 2D grasp planning, computational efficiency, Gaussian process implicit surface, Gaussian uncertainty, Gittins index {MAB} methods, {GPIS}, gripper approach, {MAB} models, multiarmed bandit models, performance evaluation, robot grasping, Thompson sampling, uncertain systems, Uncertainty, warehouse order fulfillment},
+	file = {IEEE Xplore Abstract Record:F\:\\Arbeitstisch\\Zotero\\storage\\46DZVTSM\\7294140.html:text/html;IEEE Xplore Full Text PDF:F\:\\Arbeitstisch\\Zotero\\storage\\ZK69U4S4\\Laskey et al. - 2015 - Multi-armed bandit models for 2D grasp planning wi.pdf:application/pdf}
+}
+
+@inproceedings{seita_large-scale_2016,
+	title = {Large-scale supervised learning of the grasp robustness of surface patch pairs},
+	abstract = {The robustness of a parallel-jaw grasp can be estimated by Monte Carlo sampling of perturbations in pose and friction but this is not computationally efficient. As an alternative, we consider fast methods using large-scale supervised learning, where the input is a description of a local surface patch at each of two contact points. We train and test with disjoint subsets of a corpus of 1.66 million grasps where robustness is estimated by Monte Carlo sampling using Dex-Net 1.0. We use the {BIDMach} machine learning toolkit to compare the performance of two supervised learning methods: Random Forests and Deep Learning. We find that both of these methods learn to estimate grasp robustness fairly reliably in terms of Mean Absolute Error ({MAE}) and {ROC} Area Under Curve ({AUC}) on a held-out test set. Speedups over Monte Carlo sampling are approximately 7500x for Random Forests and 1500x for Deep Learning.},
+	pages = {216--223},
+	booktitle = {Proceedings of the {IEEE} International Conference on Simulation, Modeling, and Programming for Autonomous Robots},
+	author = {Seita, D. and Pokorny, F. T. and Mahler, J. and Kragic, D. and Franklin, M. and Canny, J. and Goldberg, K.},
+	date = {2016-12},
+	keywords = {Dex-Net 1.0, Force, Friction, Robustness, Robots, learning (artificial intelligence), deep learning, sampling methods, Machine learning, grippers, Uncertainty, {AUC}, {BIDMach} machine learning toolkit, large-scale supervised learning, local surface patch, {MAE}, mean absolute error, Monte Carlo methods, Monte Carlo sampling, parallel-jaw grasp robustness, Probabilistic logic, random forests, {ROC} area under curve, surface patch pairs},
+	file = {IEEE Xplore Abstract Record:F\:\\Arbeitstisch\\Zotero\\storage\\U6LYKKQZ\\7862399.html:text/html;IEEE Xplore Full Text PDF:F\:\\Arbeitstisch\\Zotero\\storage\\ISCPZ5VM\\Seita et al. - 2016 - Large-scale supervised learning of the grasp robus.pdf:application/pdf}
+}
+
+@inproceedings{stauffer_adaptive_1999,
+	title = {Adaptive background mixture models for real-time tracking},
+	abstract = {A common method for real-time segmentation of moving regions in image sequences involves “background subtraction,” or thresholding the error between an estimate of the image without moving objects and the current image. The numerous approaches to this problem diﬀer in the type of background model used and the procedure used to update the model. This paper discusses modeling each pixel as a mixture of Gaussians and using an on-line approximation to update the model. The Gaussian distributions of the adaptive mixture model are then evaluated to determine which are most likely to result from a background process. Each pixel is classiﬁed based on whether the Gaussian distribution which represents it most eﬀectively is considered part of the background model.},
+	pages = {246--252},
+	booktitle = {Proceedings of the {IEEE} Computer Society Conference on Computer Vision and Pattern Recognition},
+	author = {Stauffer, C. and Grimson, W.E.L.},
+	date = {1999-06},
+	langid = {english},
+	file = {Stauffer and Grimson - 1999 - Adaptive background mixture models for real-time t.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\IXMXCJ6T\\Stauffer and Grimson - 1999 - Adaptive background mixture models for real-time t.pdf:application/pdf}
+}
+
+@inproceedings{rusu_3d_2011,
+	title = {3D is here: Point Cloud Library ({PCL})},
+	abstract = {With the advent of new, low-cost 3D sensing hardware such as the Kinect, and continued efforts in advanced point cloud processing, 3D perception gains more and more importance in robotics, as well as other fields. In this paper we present one of our most recent initiatives in the areas of point cloud perception: {PCL} (Point Cloud Library - http://pointclouds.org). {PCL} presents an advanced and extensive approach to the subject of 3D perception, and it's meant to provide support for all the common 3D building blocks that applications need. The library contains state-of-the art algorithms for: filtering, feature estimation, surface reconstruction, registration, model fitting and segmentation. {PCL} is supported by an international community of robotics and perception researchers. We provide a brief walkthrough of {PCL} including its algorithmic capabilities and implementation strategies.},
+	pages = {1--4},
+	booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation},
+	author = {Rusu, R. B. and Cousins, S.},
+	date = {2011-05},
+	keywords = {robot vision, feature extraction, 3D building blocks, 3D perception gains, advanced point cloud processing, feature estimation, image segmentation, international robotics community, Kinect, low-cost 3D sensing hardware, model fitting, {PCL}, point cloud library, surface reconstruction, surface registration, surface segmentation},
+	file = {IEEE Xplore Abstract Record:F\:\\Arbeitstisch\\Zotero\\storage\\Y2JJLTFF\\5980567.html:text/html;IEEE Xplore Full Text PDF:F\:\\Arbeitstisch\\Zotero\\storage\\5SADPYEY\\Rusu and Cousins - 2011 - 3D is here Point Cloud Library (PCL).pdf:application/pdf}
+}
+
+@incollection{lenarcic_accurate_2018,
+	title = {Accurate Computation of Quaternions from Rotation Matrices},
+	abstract = {The main non-singular alternative to 3×3 proper orthogonal matrices, for representing rotations in R3, is quaternions. Thus, it is important to have reliable methods to pass from one representation to the other. While passing from a quaternion to the corresponding rotation matrix is given by Euler-Rodrigues formula, the other way round can be performed in many diﬀerent ways. Although all of them are algebraically equivalent, their numerical behavior can be quite diﬀerent. In 1978, Shepperd proposed a method for computing the quaternion corresponding to a rotation matrix which is considered the most reliable method to date. Shepperd’s method, thanks to a voting scheme between four possible solutions, always works far from formulation singularities. In this paper, we propose a new method which outperforms Shepperd’s method without increasing the computational cost.},
+	pages = {39--46},
+	booktitle = {Advances in Robot Kinematics 2018},
+	publisher = {Springer International Publishing},
+	author = {Sarabandi, Soheil and Thomas, Federico},
+	editor = {Lenarcic, Jadran and Parenti-Castelli, Vincenzo},
+	date = {2018-06},
+	langid = {english},
+	file = {Sarabandi and Thomas - 2019 - Accurate Computation of Quaternions from Rotation .pdf:F\:\\Arbeitstisch\\Zotero\\storage\\TSJ5TYP4\\Sarabandi and Thomas - 2019 - Accurate Computation of Quaternions from Rotation .pdf:application/pdf}
+}
+
+@unpublished{birchfield_introduction_1998,
+	title = {An Introduction to Projective Geometry (for computer vision)},
+	pagetotal = {22},
+	author = {Birchfield, Stan},
+	date = {1998-04},
+	langid = {english},
+	file = {projective.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\HVVNUQ48\\projective.pdf:application/pdf}
+}
+
+@book{jazar_theory_2010,
+	edition = {2. ed.},
+	title = {Theory of applied robotics: kinematics, dynamics, and control},
+	pagetotal = {883},
+	publisher = {Springer},
+	author = {Jazar, Reza N.},
+	date = {2010-06},
+	langid = {english},
+	keywords = {Problems, exercises, etc, Robotics}
+}
+
+@unpublished{jia_quaternions_2010,
+	title = {Quaternions and Rotations},
+	author = {Jia, Yan-Bin},
+	date = {2010-10},
+	langid = {english},
+	file = {Jia - Quaternions and Rotations.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\DFACCP6A\\Jia - Quaternions and Rotations.pdf:application/pdf}
+}
+
+@book{orourke_computational_1994,
+	title = {Computational Geometry in C},
+	publisher = {Cambridge University Press},
+	author = {O'Rourke, Joseph},
+	date = {1994-03}
+}
+
+@article{fischler_random_1981,
+	title = {Random Sample Consensus: A Paradigm for Model Fitting with Applications to Image Analysis and Automated Cartography},
+	pages = {381--395},
+	journaltitle = {Communications of the {ACM}},
+	author = {Fischler, Martin A. and Bolles, Robert C.},
+	date = {1981-06}
+}
+
+@book{rubinstein_fast_2013,
+	title = {Fast Sequential Monte Carlo Methods for Counting and Optimization},
+	pagetotal = {192},
+	publisher = {John Wiley \& Sons, Ltd},
+	author = {Rubinstein, Reuven Y. and Ridder, Ad and Vaisman, Radislav},
+	date = {2013}
+}
+
+@article{goetschalckx_continuous_2011,
+	title = {Continuous Correlated Beta Processes},
+	abstract = {In this paper we consider a (possibly continuous) space of Bernoulli experiments. We assume that the Bernoulli distributions are correlated. All evidence data comes in the form of successful or failed experiments at different points. Current state-ofthe-art methods for expressing a distribution over a continuum of Bernoulli distributions use logistic Gaussian processes or Gaussian copula processes. However, both of these require computationally expensive matrix operations (cubic in the general case). We introduce a more intuitive approach, directly correlating beta distributions by sharing evidence between them according to a kernel function, an approach which has linear time complexity. The approach can easily be extended to multiple outcomes, giving a continuous correlated Dirichlet process, and can be used for both classiﬁcation and learning the actual probabilities of the Bernoulli distributions. We show results for a number of data sets, as well as a case-study where a mixture of continuous beta processes is used as part of an automated stroke rehabilitation system.},
+	pages = {1269},
+	journaltitle = {International Joint Conference on Artificial Intelligence},
+	author = {Goetschalckx, Robby and Poupart, Pascal and Hoey, Jesse},
+	date = {2011},
+	langid = {english},
+	file = {Goetschalckx et al. - Continuous Correlated Beta Processes.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\H3DRIRVR\\Goetschalckx et al. - Continuous Correlated Beta Processes.pdf:application/pdf}
+}
+
+@incollection{hutchison_stochastic_2009,
+	title = {Stochastic Optimization for Rigid Point Set Registration},
+	abstract = {In this paper we propose a new method for pairwise rigid point set registration. We pay special attention to noise robustness, outlier resistance and global optimal alignment. The problem of registering two point clouds in space is converted to a minimization of a nonlinear cost function. We propose a cost function that aims to reduce the impact of noise and outliers. Its deﬁnition is based on the input point sets and is directly related to the quality of a concrete rigid transform between them. In order to achieve a global optimal registration, without the need of a good initial alignment, we develop a new stochastic approach for global minimization. Tests on a variety of point sets show that the proposed registration algorithm performs very well on noisy, outlier corrupted and incomplete data.},
+	pages = {1043--1054},
+	booktitle = {Advances in Visual Computing},
+	publisher = {Springer Berlin Heidelberg},
+	author = {Papazov, Chavdar and Burschka, Darius},
+	editor = {Bebis, George and Boyle, Richard and Parvin, Bahram and Koracin, Darko and Kuno, Yoshinori and Wang, Junxian and Wang, Jun-Xuan and Wang, Junxian and Pajarola, Renato and Lindstrom, Peter and Hinkenjann, André and Encarnação, Miguel L. and Silva, Cláudio T. and Coming, Daniel},
+	editorb = {Hutchison, David and Kanade, Takeo and Kittler, Josef and Kleinberg, Jon M. and Mattern, Friedemann and Mitchell, John C. and Naor, Moni and Nierstrasz, Oscar and Pandu Rangan, C. and Steffen, Bernhard and Sudan, Madhu and Terzopoulos, Demetri and Tygar, Doug and Vardi, Moshe Y. and Weikum, Gerhard},
+	editorbtype = {redactor},
+	date = {2009},
+	langid = {english},
+	file = {Papazov and Burschka - 2009 - Stochastic Optimization for Rigid Point Set Regist.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\92KRI8FU\\Papazov and Burschka - 2009 - Stochastic Optimization for Rigid Point Set Regist.pdf:application/pdf}
+}
+
+@book{bradski_learning_2008,
+	edition = {1. ed.},
+	title = {Learning {OpenCV}: computer vision with the {OpenCV} library},
+	pagetotal = {555},
+	publisher = {O'Reilly},
+	author = {Bradski, Gary R. and Kaehler, Adrian},
+	date = {2008-10},
+	langid = {english}
+}
+
+@inproceedings{artac_incremental_2002,
+	title = {Incremental {PCA} for on-line visual learning and recognition},
+	abstract = {The methods for visual learning that compute a space of eigenvectors by Principal Component Analysis ({PCA}) traditionally require a batch computation step. Since this leads to potential problems when dealing with large sets of images, several incremental methods for the computation of the eigenvectors have been introduced. However such learning cannot be considered as an on-line process, since all the images are retained until the final step of computation of space of eigenvectors, when their coefficients in this subspace are computed. In this paper we propose a method that allows for simultaneous learning and recognition. We show that we can keep only the coefficients of the learned images and discard the actual images and still are able to build a model of appearance that is fast to compute and open-ended. We performed extensive experimental testing which showed that the recognition rate and reconstruction accuracy are comparable to those obtained by the batch method.},
+	pages = {781--784},
+	booktitle = {Proceedings of the Object recognition supported by user interaction for service robots},
+	author = {Artac, M. and Jogan, M. and Leonardis, A.},
+	date = {2002-08},
+	keywords = {Educational programs, eigenvalues and eigenfunctions, eigenvectors, Image databases, image recognition, incremental principal component analysis, Information science, online visual learning, principal component analysis, Principal component analysis, simultaneous learning, visual recognition},
+	file = {IEEE Xplore Abstract Record:F\:\\Arbeitstisch\\Zotero\\storage\\PGDQA5IQ\\1048133.html:text/html;IEEE Xplore Full Text PDF:F\:\\Arbeitstisch\\Zotero\\storage\\4HGZ74PN\\Artac et al. - 2002 - Incremental PCA for on-line visual learning and re.pdf:application/pdf}
+}
+
+@book{jolliffe_principal_2002,
+	edition = {2. ed.},
+	title = {Principal Component Analysis},
+	pagetotal = {488},
+	publisher = {Springer},
+	author = {Jolliffe, I. T.},
+	date = {2002-10},
+	langid = {english}
+}
+
+@online{stanford_cs_class_notes_cs231n_nodate,
+	title = {{CS}231n Convolutional Neural Networks for Visual Recognition},
+	url = {http://cs231n.github.io/neural-networks-1/},
+	author = {Stanford {CS} class notes},
+	urldate = {2019-10-15},
+	langid = {english},
+	file = {CS231n Convolutional Neural Networks for Visual Recognition:F\:\\Arbeitstisch\\Zotero\\storage\\V8DP7B4W\\neural-networks-1.html:text/html}
+}
+
+@inproceedings{krizhevsky_imagenet_2012,
+	title = {{ImageNet} Classification with Deep Convolutional Neural Networks},
+	pages = {1097--1105},
+	booktitle = {Proceedings of the International Conference on Neural Information Processing Systems},
+	author = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E.},
+	date = {2012-06},
+	langid = {english}
+}
+
+@article{ruiz-del-solar_survey_2018,
+	title = {A Survey on Deep Learning Methods for Robot Vision},
+	url = {https://arxiv.org/abs/1803.10862},
+	abstract = {Deep learning has allowed a paradigm shift in pattern recognition, from using hand-crafted features together with statistical classifiers to using general-purpose learning procedures for learning data-driven representations, features, and classifiers together. The application of this new paradigm has been particularly successful in computer vision, in which the development of deep learning methods for vision applications has become a hot research topic. Given that deep learning has already attracted the attention of the robot vision community, the main purpose of this survey is to address the use of deep learning in robot vision. To achieve this, a comprehensive overview of deep learning and its usage in computer vision is given, that includes a description of the most frequently used neural models and their main application areas. Then, the standard methodology and tools used for designing deep-learning based vision systems are presented. Afterwards, a review of the principal work using deep learning in robot vision is presented, as well as current and future trends related to the use of deep learning in robotics. This survey is intended to be a guide for the developers of robot vision systems.},
+	pages = {43},
+	journaltitle = {{arXiv}:1803.10862 [cs]},
+	author = {Ruiz-del-Solar, Javier and Loncomilla, Patricio and Soto, Naiomi},
+	date = {2018-03},
+	langid = {english},
+	file = {Ruiz-del-Solar et al. - A Survey on Deep Learning Methods for Robot Vision.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\NGH9YV3V\\Ruiz-del-Solar et al. - A Survey on Deep Learning Methods for Robot Vision.pdf:application/pdf}
+}
+
+@book{goodfellow_deep_2016,
+	title = {Deep Learning},
+	publisher = {{MIT} Press},
+	author = {Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron},
+	date = {2016-11},
+	langid = {english}
+}
+
+@inproceedings{nair_rectified_2010,
+	title = {Rectified Linear Units Improve Restricted Boltzmann Machines},
+	abstract = {Restricted Boltzmann machines were developed using binary stochastic hidden units. These can be generalized by replacing each binary unit by an inﬁnite number of copies that all have the same weights but have progressively more negative biases. The learning and inference rules for these “Stepped Sigmoid Units” are unchanged. They can be approximated eﬃciently by noisy, rectiﬁed linear units. Compared with binary units, these units learn features that are better for object recognition on the {NORB} dataset and face veriﬁcation on the Labeled Faces in the Wild dataset. Unlike binary units, rectiﬁed linear units preserve information about relative intensities as information travels through multiple layers of feature detectors.},
+	pages = {807--814},
+	booktitle = {Proceedings of the International Conference on Machine Learning},
+	author = {Nair, Vinod and Hinton, Geoffrey E},
+	date = {2010-06},
+	langid = {english},
+	file = {Nair und Hinton - Rectified Linear Units Improve Restricted Boltzman.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\HSL32GAT\\Nair und Hinton - Rectified Linear Units Improve Restricted Boltzman.pdf:application/pdf}
+}
+
+@book{bishop_pattern_2006,
+	title = {Pattern recognition and machine learning},
+	series = {Information science and statistics},
+	pagetotal = {738},
+	publisher = {Springer},
+	author = {Bishop, Christopher M.},
+	date = {2006},
+	langid = {english},
+	keywords = {Machine learning, Pattern perception}
+}
+
+@book{okane_gentle_2013,
+	title = {A Gentle Introduction to {ROS}},
+	pagetotal = {155},
+	publisher = {Independently published},
+	author = {O'Kane, Jason M.},
+	date = {2013-10},
+	langid = {english}
+}
+
+@inproceedings{todorov_convex_2014,
+	title = {Convex and analytically-invertible dynamics with contacts and constraints: Theory and implementation in {MuJoCo}},
+	abstract = {We describe a full-featured simulation pipeline implemented in the {MuJoCo} physics engine. It includes multi-joint dynamics in generalized coordinates, holonomic constraints, dry joint friction, joint and tendon limits, frictionless and frictional contacts that can have sliding, torsional and rolling friction. The forward dynamics of a 27-dof humanoid with 10 contacts are evaluated in 0.1 msec. Since the simulation is stable at 10 msec timesteps, it can run 100 times faster than real-time on a single core of a desktop processor. Furthermore the entire simulation pipeline can be inverted analytically, an order-ofmagnitude faster than the corresponding forward dynamics. We soften all constraints, in a way that avoids instabilities and unrealistic penetrations associated with earlier spring-damper methods and yet is sufﬁcient to allow inversion. Constraints are imposed via impulses, using an extended version of the velocitystepping approach. For holomonic constraints the extension involves a soft version of the Gauss principle. For all other constraints we extend our earlier work on complementarity-free contact dynamics – which were already known to be invertible via an iterative solver – and develop a new formulation allowing analytical inversion.},
+	pages = {6054--6061},
+	booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation},
+	author = {Todorov, Emanuel},
+	date = {2014-05},
+	langid = {english},
+	file = {Todorov - 2014 - Convex and analytically-invertible dynamics with c.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\KAREESIU\\Todorov - 2014 - Convex and analytically-invertible dynamics with c.pdf:application/pdf}
+}
+
+@article{srivastava_dropout:_2014,
+	title = {Dropout: A Simple Way to Prevent Neural Networks from Overfitting},
+	abstract = {Deep neural nets with a large number of parameters are very powerful machine learning systems. However, overfitting is a serious problem in such networks. Large networks are also slow to use, making it difficult to deal with overfitting by combining the predictions of many different large neural nets at test time. Dropout is a technique for addressing this problem. The key idea is to randomly drop units (along with their connections) from the neural network during training. This prevents units from co-adapting too much. During training, dropout samples from an exponential number of different "thinned" networks. At test time, it is easy to approximate the effect of averaging the predictions of all these thinned networks by simply using a single unthinned network that has smaller weights. This significantly reduces overfitting and gives major improvements over other regularization methods. We show that dropout improves the performance of neural networks on supervised learning tasks in vision, speech recognition, document classification and computational biology, obtaining state-of-the-art results on many benchmark data sets.},
+	pages = {1929--1958},
+	journaltitle = {Journal of Machine Learning Research},
+	author = {Srivastava, Nitish and Hinton, Geoffrey and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan},
+	date = {2014-06},
+	langid = {english},
+	file = {Srivastava et al. - Dropout A Simple Way to Prevent Neural Networks f.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\LUCEKP29\\Srivastava et al. - Dropout A Simple Way to Prevent Neural Networks f.pdf:application/pdf}
+}
+
+@book{guennebaud_eigen_2010,
+	title = {Eigen v3},
+	url = {http://eigen.tuxfamily.org},
+	author = {Guennebaud, Gaël and Jacob, Benoît and {others}},
+	date = {2010}
+}
+
+@article{bradski_opencv_2000,
+	title = {The {OpenCV} Library},
+	journaltitle = {Dr. Dobb's Journal of Software Tools},
+	author = {Bradski, G.},
+	date = {2000},
+	keywords = {bibtex-import}
+}
+
+@book{chollet_keras_2015,
+	title = {Keras},
+	url = {https://keras.io},
+	author = {Chollet, François and {others}},
+	date = {2015}
+}
+
+@book{martin_abadi_tensorflow:_2015,
+	title = {{TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems},
+	url = {https://www.tensorflow.org/},
+	author = {{Martín Abadi} and {Ashish Agarwal} and {Paul Barham} and {Eugene Brevdo} and {Zhifeng Chen} and {Craig Citro} and {Greg S. Corrado} and {Andy Davis} and {Jeffrey Dean} and {Matthieu Devin} and {Sanjay Ghemawat} and {Ian Goodfellow} and {Andrew Harp} and {Geoffrey Irving} and {Michael Isard} and Jia, Yangqing and {Rafal Jozefowicz} and {Lukasz Kaiser} and {Manjunath Kudlur} and {Josh Levenberg} and {Dandelion Mané} and {Rajat Monga} and {Sherry Moore} and {Derek Murray} and {Chris Olah} and {Mike Schuster} and {Jonathon Shlens} and {Benoit Steiner} and {Ilya Sutskever} and {Kunal Talwar} and {Paul Tucker} and {Vincent Vanhoucke} and {Vijay Vasudevan} and {Fernanda Viégas} and {Oriol Vinyals} and {Pete Warden} and {Martin Wattenberg} and {Martin Wicke} and {Yuan Yu} and {Xiaoqiang Zheng}},
+	date = {2015}
+}
+
+@article{smith_open_2006,
+	title = {{OPEN} {DYNAMICS} {ENGINE}},
+	pages = {98},
+	author = {Smith, Russell},
+	date = {2006-02},
+	langid = {english},
+	file = {Smith - OPEN DYNAMICS ENGINE.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\TQ3NGI3X\\Smith - OPEN DYNAMICS ENGINE.pdf:application/pdf}
+}
+
+@inproceedings{sutskever_importance_2013,
+	title = {On the importance of initialization and momentum in deep learning},
+	abstract = {Deep and recurrent neural networks ({DNNs} and {RNNs} respectively) are powerful models that were considered to be almost impossible to train using stochastic gradient descent with momentum. In this paper, we show that when stochastic gradient descent with momentum uses a well-designed random initialization and a particular type of slowly increasing schedule for the momentum parameter, it can train both {DNNs} and {RNNs} (on datasets with long-term dependencies) to levels of performance that were previously achievable only with Hessian-Free optimization. We find that both the initialization and the momentum are crucial since poorly initialized networks cannot be trained with momentum and well-initialized networks perform markedly worse when the momentum is absent or poorly tuned. Our success training these models suggests that previous attempts to train deep and recurrent neural networks from random initializations have likely failed due to poor initialization schemes. Furthermore, carefully tuned momentum methods suffice for dealing with the curvature issues in deep and recurrent network training objectives without the need for sophisticated second-order methods.},
+	pages = {1139--1147},
+	booktitle = {Proceedings of the International Conference on Machine Learning},
+	author = {Sutskever, Ilya and Martens, James and Dahl, George and Hinton, Geoffrey},
+	date = {2013-06},
+	file = {Sutskever et al. - On the importance of initialization and momentum i.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\GMR2X7VD\\Sutskever et al. - On the importance of initialization and momentum i.pdf:application/pdf}
+}
+
+@inproceedings{he_delving_2015,
+	title = {Delving Deep into Rectifiers: Surpassing Human-Level Performance on {ImageNet} Classification},
+	abstract = {Rectiﬁed activation units (rectiﬁers) are essential for state-of-the-art neural networks. In this work, we study rectiﬁer neural networks for image classiﬁcation from two aspects. First, we propose a Parametric Rectiﬁed Linear Unit ({PReLU}) that generalizes the traditional rectiﬁed unit. {PReLU} improves model ﬁtting with nearly zero extra computational cost and little overﬁtting risk. Second, we derive a robust initialization method that particularly considers the rectiﬁer nonlinearities. This method enables us to train extremely deep rectiﬁed models directly from scratch and to investigate deeper or wider network architectures. Based on the learnable activation and advanced initialization, we achieve 4.94\% top-5 test error on the {ImageNet} 2012 classiﬁcation dataset. This is a 26\% relative improvement over the {ILSVRC} 2014 winner ({GoogLeNet}, 6.66\% [33]). To our knowledge, our result is the ﬁrst1 to surpass the reported human-level performance (5.1\%, [26]) on this dataset.},
+	pages = {1026--1034},
+	booktitle = {Proceedings of the {IEEE} International Conference on Computer Vision},
+	author = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+	date = {2015-12},
+	langid = {english},
+	file = {He et al. - 2015 - Delving Deep into Rectifiers Surpassing Human-Lev.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\TV7CM2C5\\He et al. - 2015 - Delving Deep into Rectifiers Surpassing Human-Lev.pdf:application/pdf}
+}
+
+@article{sahbani_overview_2012,
+	title = {An overview of 3D object grasp synthesis algorithms},
+	abstract = {This overview presents computational algorithms for generating 3D object grasps with autonomous multi-fingered robotic hands. Robotic grasping has been an active research subject for decades, and a great deal of effort has been spent on grasp synthesis algorithms. Existing papers focus on reviewing the mechanics of grasping and the finger–object contact interactions Bicchi and Kumar (2000) [12] or robot hand design and their control Al-Gallaf et al. (1993) [70]. Robot grasp synthesis algorithms have been reviewed in Shimoga (1996) [71], but since then an important progress has been made toward applying learning techniques to the grasping problem. This overview focuses on analytical as well as empirical grasp synthesis approaches.},
+	pages = {326 -- 336},
+	journaltitle = {Robotics and Autonomous Systems},
+	author = {Sahbani, A. and El-Khoury, S. and Bidaud, P.},
+	date = {2012-03},
+	keywords = {Force-closure, Grasp synthesis, Learning by demonstration, Task modeling}
+}
+
+@inproceedings{pinto_supersizing_2016,
+	title = {Supersizing self-supervision: Learning to grasp from 50K tries and 700 robot hours},
+	abstract = {Current learning-based robot grasping approaches exploit human-labeled datasets for training the models. However, there are two problems with such a methodology: (a) since each object can be grasped in multiple ways, manually labeling grasp locations is not a trivial task; (b) human labeling is biased by semantics. While there have been attempts to train robots using trial-and-error experiments, the amount of data used in such experiments remains substantially low and hence makes the learner prone to over-ﬁtting. In this paper, we take the leap of increasing the available training data to 40 times more than prior work, leading to a dataset size of 50K data points collected over 700 hours of robot grasping attempts. This allows us to train a Convolutional Neural Network ({CNN}) for the task of predicting grasp locations without severe overﬁtting. In our formulation, we recast the regression problem to an 18way binary classiﬁcation over image patches. We also present a multi-stage learning approach where a {CNN} trained in one stage is used to collect hard negatives in subsequent stages. Our experiments clearly show the beneﬁt of using large-scale datasets (and multi-stage training) for the task of grasping. We also compare to several baselines and show state-of-the-art performance on generalization to unseen objects for grasping.},
+	pages = {3406--3413},
+	booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation},
+	author = {Pinto, Lerrel and Gupta, Abhinav},
+	date = {2016-05},
+	langid = {english},
+	keywords = {image classification, robot vision, Three-dimensional displays, Grasping, Robots, Grippers, learning (artificial intelligence), Training, {CNN}, grippers, convolutional neural network, 18-way binary classification, Data models, human-labeled datasets, image patches, Labeling, model free learning-based robot grasping, neurocontrollers, regression analysis, regression problem, semantics, supersizing self-supervision, trial-and-error experiments},
+	file = {Pinto and Gupta - 2015 - Supersizing Self-supervision Learning to Grasp fr.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\FRKV7JDF\\Pinto and Gupta - 2015 - Supersizing Self-supervision Learning to Grasp fr.pdf:application/pdf}
+}
+
+@article{bouwmans_background_2008,
+	title = {Background Modeling using Mixture of Gaussians for Foreground Detection - A Survey},
+	abstract = {Mixture of Gaussians is a widely used approach for background modeling to detect moving objects from static cameras. Numerous improvements of the original method developed by Stauffer and Grimson [1] have been proposed over the recent years and the purpose of this paper is to provide a survey and an original classification of these improvements. We also discuss relevant issues to reduce the computation time. Firstly, the original {MOG} are reminded and discussed following the challenges met in video sequences. Then, we categorize the different improvements found in the literature. We have classified them in term of strategies used to improve the original {MOG} and we have discussed them in term of the critical situations they claim to handle. After analyzing the strategies and identifying their limitations, we conclude with several promising directions for future research.},
+	pages = {219--237},
+	journaltitle = {Recent Patents on Computer Science},
+	author = {Bouwmans, Thierry and El Baf, Fida and Vachon, Bertrand},
+	date = {2008-11},
+	keywords = {Background modeling, foreground detection, mixture of gaussians}
+}
+
+@inproceedings{kazhdan_poisson_2006,
+	title = {Poisson Surface Reconstruction},
+	pages = {61--70},
+	booktitle = {Proceedings of the Eurographics Symposium on Geometry Processing},
+	author = {Kazhdan, Michael and Bolitho, Matthew and Hoppe, Hugues},
+	date = {2006-07},
+	note = {event-place: Cagliari, Sardinia, Italy}
+}
+
+@inproceedings{glorot_understanding_2010,
+	title = {Understanding the difficulty of training deep feedforward neural networks},
+	series = {Proceedings of Machine Learning Research},
+	abstract = {Whereas before 2006 it appears that deep multi-layer neural networks were not successfully trained, since then several algorithms have been shown to successfully train them, with experimental results showing the superiority of deeper vs less deep architectures. All these experimental results were obtained with new initialization or training mechanisms. Our objective here is to understand better why standard gradient descent from random initialization is doing so poorly with deep neural networks, to better understand these recent relative successes and help design better algorithms in the future. We first observe the influence of the non-linear activations functions. We find that the logistic sigmoid activation is unsuited for deep networks with random initialization because of its mean value, which can drive especially the top hidden layer into saturation. Surprisingly, we find that saturated units can move out of saturation by themselves, albeit slowly, and explaining the plateaus sometimes seen when training neural networks. We find that a new non-linearity that saturates less can often be beneficial. Finally, we study how activations and gradients vary across layers and during training, with the idea that training may be more difficult when the singular values of the Jacobian associated with each layer are far from 1. Based on these considerations, we propose a new initialization scheme that brings substantially faster convergence.},
+	pages = {249--256},
+	booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics},
+	author = {Glorot, Xavier and Bengio, Yoshua},
+	editor = {Teh, Yee Whye and Titterington, Mike},
+	date = {2010-05},
+	file = {Glorot and Bengio - Understanding the difﬁculty of training deep feedf.pdf:F\:\\Arbeitstisch\\Zotero\\storage\\LKN2DFUE\\Glorot and Bengio - Understanding the difﬁculty of training deep feedf.pdf:application/pdf}
+}
+
+@article{lu_modeling_2019,
+	title = {Modeling Grasp Type Improves Learning-Based Grasp Planning},
+	abstract = {Different manipulation tasks require different types of grasps. For example, holding a heavy tool like a hammer requires a multi-ﬁngered power grasp offering stability, while holding a pen to write requires a multi-ﬁngered precision grasp to impart dexterity on the object. In this paper, we propose a probabilistic grasp planner that explicitly models grasp type for planning high-quality precision and power grasps in real-time. We take a learning approach in order to plan grasps of different types for previously unseen objects when only partial visual information is available. Our work demonstrates the ﬁrst supervised learning approach to grasp planning that can explicitly plan both power and precision grasps for a given object. Additionally, we compare our learned grasp model with a model that does not encode type and show that modeling grasp type improves the success rate of generated grasps. Furthermore we show the beneﬁt of learning a prior over grasp conﬁgurations to improve grasp inference with a learned classiﬁer.},
+	pages = {784--791},
+	journaltitle = {{IEEE} Robotics and Automation Letters},
+	author = {Lu, Qingkai and Hermans, Tucker},
+	date = {2019-01},
+	file = {Lu and Hermans - 2019 - Modeling Grasp Type Improves Learning-Based Grasp .pdf:F\:\\Arbeitstisch\\Zotero\\storage\\A87GUE6G\\Lu and Hermans - 2019 - Modeling Grasp Type Improves Learning-Based Grasp .pdf:application/pdf}
+}
+
+@inproceedings{ivaldi_tools_2014,
+	title = {Tools for simulating humanoid robot dynamics: a survey based on user feedback},
+	pages = {15},
+	booktitle = {Proceedings of the {IEEE}-{RAS} International Conference on Humanoid Robots (Humanoids)},
+	author = {Ivaldi, Serena and Peters, Jan and Padois, Vincent and Nori, Francesco},
+	date = {2014-02},
+	langid = {english},
+	file = {Ivaldi et al. - 2014 - Tools for dynamics simulation of robots a survey .pdf:F\:\\Arbeitstisch\\Zotero\\storage\\FYU8FHWF\\Ivaldi et al. - 2014 - Tools for dynamics simulation of robots a survey .pdf:application/pdf}
+}
